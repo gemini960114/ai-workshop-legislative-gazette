@@ -24,14 +24,15 @@
 ## 事前準備
 
 1. 下載並開啟本資料夾
-2. 在本資料夾安裝 Anthropic 官方的 Word、PDF skill（讓 AI 能可靠地產生 Word 和 PDF）：
+2. 確認電腦已安裝 [Node.js](https://nodejs.org/) 與 [Python 3](https://www.python.org/downloads/)（skill 靠它們產生檔案，學員不需要會寫程式）
+3. 在本資料夾開啟終端機，安裝 Anthropic 官方的 Word、PDF skill（讓 AI 能可靠地產生 Word 和 PDF）：
 
    ```bash
    npx skills add anthropics/skills@docx -a antigravity -a claude-code --copy -y
    npx skills add anthropics/skills@pdf -a antigravity -a claude-code --copy -y
    ```
 
-3. 轉 PDF 需要 Microsoft Word 或 [LibreOffice](https://www.libreoffice.org/download/download/) 其中一個
+4. 轉 PDF 需要 Microsoft Word 或 [LibreOffice](https://www.libreoffice.org/download/download/) 其中一個
 
 skill 不用特別點名，只要說「存成 Word」「轉成 PDF」就會用到。
 
@@ -67,7 +68,7 @@ skill 不用特別點名，只要說「存成 Word」「轉成 PDF」就會用�
 - 「依主題分類，做成表格。」
 - 「立法院對國研院的預算做了哪些決議？」（答案在 6/24 那份的議事錄）
 - 「國科會答應過委員哪些事？」
-- 「把以上整理成一份正式的 Word 報告，存在 整理結果/國網議題：要有封面、目錄，頁尾加頁碼。」
+- 「把以上整理成一份正式的 Word 報告，存在 整理結果/國網議題：要有封面、目錄，頁尾加頁碼，字型一樣用微軟正黑體。」
 
 預期：章節用 Word 內建的標題樣式，目錄可以更新（在目錄上按右鍵 →「更新功能變數」會出現頁碼）。
 
@@ -75,7 +76,7 @@ skill 不用特別點名，只要說「存成 Word」「轉成 PDF」就會用�
 
 - 「上網查葛如鈞最近跟 AI 有關的新聞。」
 - 「下次開會，委員可能會問國網中心什麼？要準備哪些資料？」
-- 「整理成報告，存在 整理結果/預測分析，Word 和 PDF 各一份，PDF 每頁加上淡灰色『內部參考』浮水印。」
+- 「整理成報告，存在 整理結果/預測分析，Word 和 PDF 各一份，字型用微軟正黑體，PDF 每頁加上淡灰色『內部參考』浮水印。」
 
 預期：報告中把【公報記載】【網路資訊】【分析推測】分開標示，網路資訊附來源與日期。PDF 的中文和浮水印都正常顯示（沒有方框），浮水印不遮住內文。
 
@@ -85,6 +86,8 @@ skill 不用特別點名，只要說「存成 Word」「轉成 PDF」就會用�
 - 「把還沒有 PDF 的 Word 檔都轉成 PDF。」
 - 「把 整理結果 裡的 PDF 合併成一份，依立委發言、國網議題、預測分析的順序，存成 整理結果/彙整.pdf。」
 - 打開 整理結果 資料夾，用 Word、PDF 閱讀器開啟檔案確認內容。
+
+預期：每份 Word 都有對應的 PDF；彙整.pdf 依指定順序排列，頁數等於各份 PDF 相加。國網議題那份的 PDF 目錄要有頁碼——如果是空的，請 AI「先更新 Word 的目錄再轉 PDF」。
 
 ## 注意
 
