@@ -1,0 +1,7 @@
+# AI 產出的文件（學員自己跑出來）
+整理結果/
+
+# 學員自行安裝的 skill
+.agents/
+.claude/
+skills-lock.json
